@@ -97,6 +97,11 @@
             }
         }
 
+        #info {
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+
         footer {
             background-color: rgba(0, 0, 0, 0.04);
             text-align: center;
@@ -113,9 +118,9 @@
 </head>
 <body>
     <div class="m3-container">
-        <h1>実行中のジョブリスト</h1>
-        <h6>10分ごとに自動で更新が行われます</h6>
+        <h1>Job List</h1>
         <input type="text" id="filterInput" placeholder="Filter by Name">
+        <div id="info"></div>
         <div class="table-container">
             <table id="jobTable">
                 <thead>
@@ -135,7 +140,7 @@
     </div>
 
     <footer>
-        &copy; 2024 7/9 Toshiyuki Togashi
+        使用言語: 日本語 | &copy; 2024 Your Company
     </footer>
 
     <script>
@@ -160,6 +165,13 @@
 
                     // Apply filtering
                     applyFilter();
+
+                    // Update job count
+                    document.getElementById('info').textContent = `現在のリスト: ${data.length} 件`;
+
+                    // Update the last fetch time
+                    const lastFetchTime = new Date().toLocaleTimeString();
+                    document.getElementById('info').textContent += ` | 最終更新: ${lastFetchTime}`;
                 })
                 .catch(error => console.error('Error fetching job list:', error));
         }
