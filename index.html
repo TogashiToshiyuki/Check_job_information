@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>現在実行中のジョブリスト</title>
+    <title>Job List</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="https://m3.material.io/styles/typography/tokens.css">
     <style>
@@ -14,6 +14,9 @@
             background-color: #fff; /* Light mode background */
             color: #000; /* Light mode text color */
             margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         @media (prefers-color-scheme: dark) {
@@ -38,6 +41,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 16px;
+            flex: 1;
         }
 
         h1 {
@@ -92,11 +96,25 @@
                 margin: 0 12px 16px 12px;
             }
         }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.04);
+            text-align: center;
+            padding: 16px;
+            font-size: 0.875rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            footer {
+                background-color: rgba(255, 255, 255, 0.08); /* Dark mode footer background */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="m3-container">
-        <h1>Job List</h1>
+        <h1>実行中のジョブリスト</h1>
+        <h2>10分ごとに自動で更新が行われます</h2>
         <input type="text" id="filterInput" placeholder="Filter by Name">
         <div class="table-container">
             <table id="jobTable">
@@ -116,9 +134,13 @@
         </div>
     </div>
 
+    <footer>
+        記述言語: HTML, CSS, JavaScript | &copy; 2024 7/9 Toshiyuki Togashi
+    </footer>
+
     <script>
         function fetchJobList() {
-            fetch('./job_list.txt')
+            fetch('job_list.txt')
                 .then(response => response.json())
                 .then(data => {
                     const tableBody = document.querySelector('#jobTable tbody');
