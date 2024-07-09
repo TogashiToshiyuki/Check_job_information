@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Job List</h1>
+    <table id="jobTable">
+        <thead>
+            <tr>
+                <th>Check Time</th>
+                <th>Job ID</th>
+                <th>Name</th>
+                <th>User</th>
+                <th>State</th>
+                <th>Queue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Job list will be populated here -->
+        </tbody>
+    </table>
+    <script>
+        const jsonUrl = 'https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/job_list.json';
+
+        async function fetchJobList() {
+            try {
+                const response = await fetch(jsonUrl);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const jobList = await response.json();
+                const tableBody = document.querySelector('#jobTable tbody');
+                tableBody.innerHTML = ''; // Clear existing table rows
+
+                jobList.forEach(job => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${job["Check Time"]}</td>
+                        <td>${job["job_id"]}</td>
+                        <td>${job["name"]}</td>
+                        <td>${job["user"]}</td>
+                        <td>${job["state"]}</td>
+                        <td>${job["queue"]}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error fetching the job list:', error);
+            }
+        }
+
+        // Fetch job list on page load
+        fetchJobList();
+        
+        // Refresh job list every 10 minutes (600000 milliseconds)
+        setInterval(fetchJobList, 600000);
+    </script>
+</body>
+</html>
