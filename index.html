@@ -22,7 +22,15 @@
                 color: #fff; /* Dark mode text color */
             }
             th {
-                background-color: rgba(255, 255, 255, 0.04); /* Dark mode header background */
+                background-color: rgba(255, 255, 255, 0.08); /* Dark mode header background */
+            }
+            td {
+                background-color: rgba(255, 255, 255, 0.04); /* Dark mode cell background */
+            }
+            #filterInput {
+                background-color: #424242; /* Dark mode filter input background */
+                color: #fff; /* Dark mode filter input text color */
+                border: 1px solid rgba(255, 255, 255, 0.12);
             }
         }
 
@@ -63,34 +71,9 @@
             background-color: rgba(0, 0, 0, 0.08); /* Row hover effect */
         }
 
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 16px;
-            padding: 16px;
-        }
-
         @media (max-width: 768px) {
-            table {
-                display: block;
-            }
-            thead {
-                display: none;
-            }
-            tr {
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 16px;
-            }
-            td {
-                display: flex;
-                justify-content: space-between;
-                padding: 8px;
-                border: 1px solid rgba(0, 0, 0, 0.12);
-                border-radius: 8px;
-                margin-bottom: 8px;
-                background-color: #fff;
+            th:nth-child(4), th:nth-child(5), th:nth-child(6), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+                display: none; /* Hide columns User, State, Queue on mobile */
             }
         }
 
@@ -100,6 +83,14 @@
             margin-bottom: 16px;
             border: 1px solid rgba(0, 0, 0, 0.12);
             border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark mode */
+        }
+
+        @media (max-width: 768px) {
+            #filterInput {
+                width: calc(100% - 24px);
+                margin: 0 12px 16px 12px;
+            }
         }
     </style>
 </head>
@@ -136,7 +127,7 @@
                     data.forEach(job => {
                         const row = document.createElement('tr');
 
-                        Object.values(job).forEach(value => {
+                        Object.values(job).forEach((value, index) => {
                             const cell = document.createElement('td');
                             cell.textContent = value;
                             row.appendChild(cell);
