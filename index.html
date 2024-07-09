@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="https://m3.material.io/styles/typography/tokens.css">
     <style>
         body {
-            font-family: Roboto, sans-serif; /* Material Design font */
-            background-color: #fff;
-            color: rgba(0, 0, 0, 0.87); /* Primary text */
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #fff; /* Light mode background */
+            color: #000; /* Light mode text color */
+            margin: 0;
+            padding: 0;
         }
 
         @media (prefers-color-scheme: dark) {
             body {
-                background-color: #121212; /* Dark theme background */
-                color: #fff;
+                background-color: #212121; /* Dark mode background */
+                color: #fff; /* Dark mode text color */
             }
         }
 
@@ -29,52 +31,74 @@
         h1 {
             font-size: 2rem;
             margin-bottom: 16px;
-        }
-
-        .job-card {
-            background-color: #fff;
-            border-radius: 4px;
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-            padding: 16px;
-            margin-bottom: 16px;
+            color: #000; /* Ensure header text color is set */
         }
 
         @media (prefers-color-scheme: dark) {
-            .job-card {
-                background-color: #212121; /* Dark theme card background */
+            h1 {
+                color: #fff; /* Ensure header text color is set in dark mode */
             }
         }
 
-        .job-card h2 {
-            font-size: 1.25rem;
-            margin-bottom: 8px;
+        .search-bar {
+            margin-bottom: 16px;
         }
 
-        .job-card table {
+        .search-bar input {
             width: 100%;
-            border-collapse: collapse;
-        }
-
-        .job-card th, .job-card td {
             padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
         }
 
-        .job-card th {
-            background-color: rgba(0, 0, 0, 0.04);
+        .search-bar input:focus {
+            outline: none;
+            border-color: #6200ee; /* Material Design primary color */
+            box-shadow: 0 0 0 2px rgba(98, 0, 238, 0.2); /* Focus shadow */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        th {
+            background-color: #f0f0f0; /* Material Design header background */
             font-weight: 500;
         }
 
-        .job-card tr:hover {
-            background-color: rgba(0, 0, 0, 0.04);
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
 
-        /* レスポンシブデザイン */
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
         @media (max-width: 768px) {
-            .job-card table {
-                display: block;
-                overflow-x: auto;
+            .m3-container {
+                padding: 8px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            .search-bar input {
+                font-size: 0.875rem;
             }
         }
     </style>
@@ -82,11 +106,23 @@
 <body>
     <div class="m3-container">
         <h1>Job List</h1>
-
-        <input type="text" id="filterInput" placeholder="Nameでフィルタ">
-
-        <div id="jobList">
-            </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by Name..." />
+        </div>
+        <table id="jobTable">
+            <thead>
+                <tr>
+                    <th>Check Time</th>
+                    <th>Job ID</th>
+                    <th>Name</th>
+                    <th>User</th>
+                    <th>State</th>
+                    <th>Queue</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
 
     <script>
@@ -94,41 +130,38 @@
             fetch('job_list.txt')
                 .then(response => response.json())
                 .then(data => {
-                    const jobList = document.querySelector('#jobList');
-                    jobList.innerHTML = ''; 
+                    const tableBody = document.querySelector('#jobTable tbody');
+                    tableBody.innerHTML = ''; // Clear existing rows
 
                     data.forEach(job => {
-                        const card = document.createElement('div');
-                        card.classList.add('job-card');
+                        const row = document.createElement('tr');
 
-                        const title = document.createElement('h2');
-                        title.textContent = job.Name;
-                        card.appendChild(title);
+                        Object.values(job).forEach((value, index) => {
+                            const cell = document.createElement('td');
+                            cell.textContent = value;
+                            row.appendChild(cell);
+                        });
 
-                        const table = document.createElement('table');
-                        // ... (テーブルの作成、job データの挿入)
-                        card.appendChild(table);
+                        tableBody.appendChild(row);
+                    });
 
-                        jobList.appendChild(card);
+                    // Add search functionality
+                    const searchInput = document.querySelector('#searchInput');
+                    searchInput.addEventListener('input', function() {
+                        const filter = this.value.toLowerCase();
+                        const rows = tableBody.querySelectorAll('tr');
+                        rows.forEach(row => {
+                            const nameCell = row.querySelector('td:nth-child(3)'); // Name column
+                            const text = nameCell ? nameCell.textContent.toLowerCase() : '';
+                            row.style.display = text.includes(filter) ? '' : 'none';
+                        });
                     });
                 })
                 .catch(error => console.error('Error fetching job list:', error));
         }
 
-        // フィルタリング機能
-        const filterInput = document.getElementById('filterInput');
-        filterInput.addEventListener('input', () => {
-            const filterText = filterInput.value.toLowerCase();
-            const jobCards = document.querySelectorAll('.job-card');
-            jobCards.forEach(card => {
-                const title = card.querySelector('h2').textContent.toLowerCase();
-                card.style.display = title.includes(filterText) ? 'block' : 'none';
-            });
-        });
-
-        // 初期読み込みと定期更新
         fetchJobList();
-        setInterval(fetchJobList, 10 * 60 * 1000);
+        setInterval(fetchJobList, 10 * 60 * 1000); // Refresh every 10 minutes
     </script>
 </body>
 </html>
