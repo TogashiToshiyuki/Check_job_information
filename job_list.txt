@@ -1,5 +1,4 @@
 [
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25724",
         "name": "G-may_20d-",
@@ -7,7 +6,6 @@
         "state": "r",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25725",
         "name": "G-may_20d-",
@@ -15,7 +13,6 @@
         "state": "r",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25726",
         "name": "G-may_20d-",
@@ -23,7 +20,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25727",
         "name": "G-may_20d-",
@@ -31,7 +27,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25728",
         "name": "G-may_30d-",
@@ -39,7 +34,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25729",
         "name": "G-may_30d-",
@@ -47,7 +41,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25730",
         "name": "G-may_30d-",
@@ -55,7 +48,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25731",
         "name": "G-may_30d-",
@@ -63,7 +55,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25732",
         "name": "G-may_30d-",
@@ -71,7 +62,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25733",
         "name": "G-may_40d-",
@@ -79,7 +69,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25734",
         "name": "G-may_40d-",
@@ -87,7 +76,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25735",
         "name": "G-may_40d-",
@@ -95,7 +83,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25736",
         "name": "G-may_40d-",
@@ -103,7 +90,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25737",
         "name": "G-may_40d-",
@@ -111,7 +97,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25738",
         "name": "G-may_50d-",
@@ -119,7 +104,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25739",
         "name": "G-may_50d-",
@@ -127,7 +111,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25740",
         "name": "G-may_50d-",
@@ -135,7 +118,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25741",
         "name": "G-may_50d-",
@@ -143,7 +125,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25742",
         "name": "G-may_50d-",
@@ -151,7 +132,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25743",
         "name": "G-may_60d-",
@@ -159,7 +139,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25744",
         "name": "G-may_60d-",
@@ -167,7 +146,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25745",
         "name": "G-may_60d-",
@@ -175,7 +153,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25746",
         "name": "G-may_60d-",
@@ -183,7 +160,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25747",
         "name": "G-may_60d-",
@@ -191,7 +167,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25748",
         "name": "G-may_70d-",
@@ -199,7 +174,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25749",
         "name": "G-may_70d-",
@@ -207,7 +181,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25750",
         "name": "G-may_70d-",
@@ -215,7 +188,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25751",
         "name": "G-may_70d-",
@@ -223,7 +195,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25752",
         "name": "G-may_70d-",
@@ -231,7 +202,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25753",
         "name": "G-may_80d-",
@@ -239,7 +209,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25754",
         "name": "G-may_80d-",
@@ -247,7 +216,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25755",
         "name": "G-may_80d-",
@@ -255,7 +223,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25756",
         "name": "G-may_80d-",
@@ -263,7 +230,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25757",
         "name": "G-may_80d-",
@@ -271,7 +237,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25758",
         "name": "G-may_90d-",
@@ -279,7 +244,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25759",
         "name": "G-may_90d-",
@@ -287,7 +251,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25760",
         "name": "G-may_90d-",
@@ -295,7 +258,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25761",
         "name": "G-may_90d-",
@@ -303,7 +265,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25762",
         "name": "G-may_90d-",
@@ -311,7 +272,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25763",
         "name": "G-mf_10d-6",
@@ -319,7 +279,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25764",
         "name": "G-mf_10d-6",
@@ -327,7 +286,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25765",
         "name": "G-mf_20d-6",
@@ -335,7 +293,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25766",
         "name": "G-mf_20d-6",
@@ -343,7 +300,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25767",
         "name": "G-mf_30d-5",
@@ -351,7 +307,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25768",
         "name": "G-mf_30d-5",
@@ -359,7 +314,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25769",
         "name": "G-mf_40d-5",
@@ -367,7 +321,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25770",
         "name": "G-mf_40d-5",
@@ -375,7 +328,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25771",
         "name": "G-mf_50d-4",
@@ -383,7 +335,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25772",
         "name": "G-mf_50d-4",
@@ -391,7 +342,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25773",
         "name": "G-mf_60d-4",
@@ -399,7 +349,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25774",
         "name": "G-mf_60d-4",
@@ -407,7 +356,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25775",
         "name": "G-mf_70d-4",
@@ -415,7 +363,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25776",
         "name": "G-mf_70d-4",
@@ -423,7 +370,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25777",
         "name": "G-mf_80d-4",
@@ -431,7 +377,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25778",
         "name": "G-mf_80d-4",
@@ -439,7 +384,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25779",
         "name": "G-mf_90d-4",
@@ -447,7 +391,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25780",
         "name": "G-mf_90d-4",
@@ -455,7 +398,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25781",
         "name": "G-may_10d-",
@@ -463,7 +405,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25782",
         "name": "G-may_20d-",
@@ -471,7 +412,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25783",
         "name": "G-may_80d-",
@@ -479,7 +419,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25784",
         "name": "G-TT_20d-t",
@@ -487,7 +426,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25785",
         "name": "G-TT_20d-t",
@@ -495,7 +433,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25786",
         "name": "G-TT_20d-t",
@@ -503,7 +440,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25787",
         "name": "G-may_10d-",
@@ -511,7 +447,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25788",
         "name": "G-may_20d-",
@@ -519,7 +454,6 @@
         "state": "qw",
         "queue": "12"
     },
-    "Check Time: 07/09 11:24:33",
     {
         "job_id": "25789",
         "name": "G-may_80d-",
