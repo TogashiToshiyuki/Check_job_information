@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job List</title>
+    <title>現在実行中のジョブリスト</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="https://m3.material.io/styles/typography/tokens.css">
     <style>
@@ -118,7 +118,7 @@
 
     <script>
         function fetchJobList() {
-            fetch('job_list.txt')
+            fetch('./job_list.txt')
                 .then(response => response.json())
                 .then(data => {
                     const tableBody = document.querySelector('#jobTable tbody');
