@@ -4,43 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://m3.material.io/styles/typography/tokens.css">
     <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #fff; /* Light mode background */
+            color: #000; /* Light mode text color */
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #212121; /* Dark mode background */
+                color: #fff; /* Dark mode text color */
+            }
+        }
+
+        .m3-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 12px; /* Rounded corners */
         }
-        table, th, td {
-            border: 1px solid black;
-        }
+
         th, td {
-            padding: 8px;
+            padding: 12px;
             text-align: left;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.12); /* Material Design border */
         }
+
         th {
-            background-color: #f2f2f2;
+            background-color: rgba(0, 0, 0, 0.04); /* Material Design header background */
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
-    <h1>Job List</h1>
-    <table id="jobTable">
-        <thead>
-            <tr>
-                <th>Check Time</th>
-                <th>Job ID</th>
-                <th>Name</th>
-                <th>User</th>
-                <th>State</th>
-                <th>Queue</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+    <div class="m3-container">
+        <h1>Job List</h1>
+        <table id="jobTable">
+            <thead>
+                <tr>
+                    <th>Check Time</th>
+                    <th>Job ID</th>
+                    <th>Name</th>
+                    <th>User</th>
+                    <th>State</th>
+                    <th>Queue</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 
     <script>
         function fetchJobList() {
-            fetch('./job_list.txt')
+            fetch('job_list.txt')
                 .then(response => response.json())
                 .then(data => {
                     const tableBody = document.querySelector('#jobTable tbody');
