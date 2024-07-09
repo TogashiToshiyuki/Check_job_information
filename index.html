@@ -66,35 +66,7 @@
             background-color: rgba(0, 0, 0, 0.08); /* Row hover effect */
         }
 
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 16px;
-            padding: 16px;
-        }
-
         @media (max-width: 768px) {
-            table {
-                display: block;
-            }
-            thead {
-                display: none;
-            }
-            tr {
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 16px;
-            }
-            td {
-                display: flex;
-                justify-content: space-between;
-                padding: 8px;
-                border: 1px solid rgba(0, 0, 0, 0.12);
-                border-radius: 8px;
-                margin-bottom: 8px;
-                background-color: #fff;
-            }
             td:nth-child(4), td:nth-child(5), td:nth-child(6) {
                 display: none; /* Hide columns User, State, Queue on mobile */
             }
