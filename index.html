@@ -27,6 +27,11 @@
             td {
                 background-color: rgba(255, 255, 255, 0.04); /* Dark mode cell background */
             }
+            #filterInput {
+                background-color: #424242; /* Dark mode filter input background */
+                color: #fff; /* Dark mode filter input text color */
+                border: 1px solid rgba(255, 255, 255, 0.12);
+            }
         }
 
         .m3-container {
@@ -67,7 +72,7 @@
         }
 
         @media (max-width: 768px) {
-            td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+            th:nth-child(4), th:nth-child(5), th:nth-child(6), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
                 display: none; /* Hide columns User, State, Queue on mobile */
             }
         }
@@ -78,6 +83,7 @@
             margin-bottom: 16px;
             border: 1px solid rgba(0, 0, 0, 0.12);
             border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark mode */
         }
 
         @media (max-width: 768px) {
@@ -124,9 +130,6 @@
                         Object.values(job).forEach((value, index) => {
                             const cell = document.createElement('td');
                             cell.textContent = value;
-                            if (index > 2 && window.innerWidth <= 768) {
-                                cell.style.display = 'none'; // Hide additional columns on mobile
-                            }
                             row.appendChild(cell);
                         });
 
