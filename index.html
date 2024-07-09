@@ -30,11 +30,6 @@
             td {
                 background-color: rgba(255, 255, 255, 0.04); /* Dark mode cell background */
             }
-            #filterInput {
-                background-color: #424242; /* Dark mode filter input background */
-                color: #fff; /* Dark mode filter input text color */
-                border: 1px solid rgba(255, 255, 255, 0.12);
-            }
         }
 
         .m3-container {
@@ -75,25 +70,19 @@
             background-color: rgba(0, 0, 0, 0.08); /* Row hover effect */
         }
 
-        @media (max-width: 768px) {
-            th:nth-child(4), th:nth-child(5), th:nth-child(6), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
-                display: none; /* Hide columns User, State, Queue on mobile */
+        tr.running {
+            background-color: rgba(255, 165, 0, 0.2); /* Light mode running job background */
+        }
+
+        @media (prefers-color-scheme: dark) {
+            tr.running {
+                background-color: rgba(255, 165, 0, 0.1); /* Dark mode running job background */
             }
         }
 
-        #filterInput {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 16px;
-            border: 1px solid rgba(0, 0, 0, 0.12);
-            border-radius: 8px;
-            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark mode */
-        }
-
         @media (max-width: 768px) {
-            #filterInput {
-                width: calc(100% - 24px);
-                margin: 0 12px 16px 12px;
+            th:nth-child(4), th:nth-child(5), th:nth-child(6), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+                display: none; /* Hide columns User, State, Queue on mobile */
             }
         }
 
@@ -119,7 +108,6 @@
 <body>
     <div class="m3-container">
         <h1>Job List</h1>
-        <input type="text" id="filterInput" placeholder="Filter by Name">
         <div id="info"></div>
         <div class="table-container">
             <table id="jobTable">
@@ -140,7 +128,7 @@
     </div>
 
     <footer>
-        &copy; 2024 Toshiyuki Togashi
+        使用言語: 日本語 | &copy; 2024 Your Company
     </footer>
 
     <script>
@@ -154,7 +142,11 @@
                     data.forEach(job => {
                         const row = document.createElement('tr');
 
-                        Object.values(job).forEach((value, index) => {
+                        if (job.State === 'r') {
+                            row.classList.add('running');
+                        }
+
+                        Object.values(job).forEach(value => {
                             const cell = document.createElement('td');
                             cell.textContent = value;
                             row.appendChild(cell);
@@ -162,9 +154,6 @@
 
                         tableBody.appendChild(row);
                     });
-
-                    // Apply filtering
-                    applyFilter();
 
                     // Update job count
                     document.getElementById('info').textContent = `現在のリスト: ${data.length} 件`;
@@ -176,31 +165,11 @@
                 .catch(error => console.error('Error fetching job list:', error));
         }
 
-        function applyFilter() {
-            const filterInput = document.querySelector('#filterInput');
-            const filterValue = filterInput.value.toLowerCase();
-            const rows = document.querySelectorAll('#jobTable tbody tr');
-
-            rows.forEach(row => {
-                const nameCell = row.querySelector('td:nth-child(3)');
-                if (nameCell) {
-                    const nameValue = nameCell.textContent.toLowerCase();
-                    if (nameValue.indexOf(filterValue) > -1) {
-                        row.style.display = '';
-                    } else {
-                        row.style.display = 'none';
-                    }
-                }
-            });
-        }
-
-        document.querySelector('#filterInput').addEventListener('input', applyFilter);
-
         // Initial fetch
         fetchJobList();
 
-        // Fetch the job list every 10 minutes
-        setInterval(fetchJobList, 10 * 60 * 1000);
+        // Fetch the job list every 5 minutes
+        setInterval(fetchJobList, 5 * 60 * 1000);
     </script>
 </body>
 </html>
