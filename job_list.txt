@@ -1,6 +1,6 @@
 [
     {
-        "Check Time": "07/12 08:02",
+        "Check Time": "07/12 08:12",
         "job_id": "26275",
         "name": "tcal.sh",
         "user": "MyLab",
@@ -8,9 +8,9 @@
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
-        "Check Time": "07/12 08:02",
-        "job_id": "26280",
-        "name": "G-TT_30d-t",
+        "Check Time": "07/12 08:12",
+        "job_id": "26281",
+        "name": "tcal.sh",
         "user": "MyLab",
         "state": "r",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
