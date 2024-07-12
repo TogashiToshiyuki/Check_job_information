@@ -1,38 +1,22 @@
 [
     {
-        "Check Time": "07/12 10:53",
-        "job_id": "26288",
-        "name": "G-TT_t0d_1",
-        "user": "MyLab",
-        "state": "r",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "Check Time": "07/12 10:53",
-        "job_id": "26289",
-        "name": "G-TT_t0d_1",
-        "user": "MyLab",
-        "state": "r",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26290",
         "name": "G-TT_t0d_1",
         "user": "MyLab",
-        "state": "qw",
-        "queue": "12"
+        "state": "r",
+        "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26291",
         "name": "G-TT_t0d_1",
         "user": "MyLab",
-        "state": "qw",
-        "queue": "12"
+        "state": "r",
+        "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26292",
         "name": "G-TT_t0d_2",
         "user": "MyLab",
@@ -40,7 +24,7 @@
         "queue": "12"
     },
     {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26293",
         "name": "G-TT_t0d_2",
         "user": "MyLab",
@@ -48,7 +32,7 @@
         "queue": "12"
     },
     {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26294",
         "name": "G-TT_t0d_2",
         "user": "MyLab",
@@ -56,7 +40,7 @@
         "queue": "12"
     },
     {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26295",
         "name": "G-TT_t0d_2",
         "user": "MyLab",
@@ -64,7 +48,7 @@
         "queue": "12"
     },
     {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26296",
         "name": "G-TT_t0d_2",
         "user": "MyLab",
@@ -72,7 +56,7 @@
         "queue": "12"
     },
     {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26297",
         "name": "G-TT_t0d_3",
         "user": "MyLab",
@@ -80,7 +64,7 @@
         "queue": "12"
     },
     {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26298",
         "name": "G-TT_t0d_3",
         "user": "MyLab",
@@ -88,7 +72,7 @@
         "queue": "12"
     },
     {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26299",
         "name": "G-TT_t0d_3",
         "user": "MyLab",
@@ -96,7 +80,7 @@
         "queue": "12"
     },
     {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26300",
         "name": "G-TT_t0d_3",
         "user": "MyLab",
@@ -104,7 +88,7 @@
         "queue": "12"
     },
     {
-        "Check Time": "07/12 10:53",
+        "Check Time": "07/12 10:59",
         "job_id": "26301",
         "name": "G-TT_t0d_3",
         "user": "MyLab",
