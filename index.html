@@ -11,25 +11,13 @@
         
         body {
             font-family: 'Roboto', 'Helvetica Neue', sans-serif;
-            background-color: #fff; /* Light mode background */
-            color: #000; /* Light mode text color */
+            background-color: #e0e0e0; /* Neumorphism background */
             margin: 0;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #212121; /* Dark mode background */
-                color: #fff; /* Dark mode text color */
-            }
-            th {
-                background-color: rgba(255, 255, 255, 0.08); /* Dark mode header background */
-            }
-            td {
-                background-color: rgba(255, 255, 255, 0.04); /* Dark mode cell background */
-            }
+            padding: 16px;
+            box-sizing: border-box;
         }
 
         .m3-container {
@@ -42,6 +30,7 @@
         h1 {
             font-size: 2rem;
             margin-bottom: 16px;
+            text-align: center;
         }
 
         .table-container {
@@ -53,6 +42,8 @@
             border-collapse: collapse;
             border-radius: 12px; /* Rounded corners */
             overflow: hidden;
+            background: #e0e0e0;
+            box-shadow: 9px 9px 16px #bebebe, -9px -9px 16px #ffffff; /* Neumorphism shadow */
         }
 
         th, td {
@@ -70,14 +61,17 @@
             background-color: rgba(0, 0, 0, 0.08); /* Row hover effect */
         }
 
-        tr.running {
-            background-color: rgba(255, 165, 0, 0.2); /* Light mode running job background */
+        .state {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 16px; /* Oval shape */
+            box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff; /* Neumorphism inset shadow */
         }
 
-        @media (prefers-color-scheme: dark) {
-            tr.running {
-                background-color: rgba(255, 165, 0, 0.1); /* Dark mode running job background */
-            }
+        .state.running {
+            background-color: #ffb74d; /* Stand-out color for running jobs */
+            color: #fff; /* Text color for running jobs */
+            box-shadow: inset 3px 3px 6px #d4a04d, inset -3px -3px 6px #ffd44d; /* Highlighted inset shadow */
         }
 
         @media (max-width: 768px) {
@@ -99,6 +93,21 @@
         }
 
         @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212; /* Dark mode background */
+                color: #e0e0e0; /* Dark mode text color */
+            }
+            table {
+                background: #121212;
+                box-shadow: 9px 9px 16px #0d0d0d, -9px -9px 16px #171717; /* Neumorphism shadow dark mode */
+            }
+            .state {
+                box-shadow: inset 3px 3px 6px #0d0d0d, inset -3px -3px 6px #171717; /* Neumorphism inset shadow dark mode */
+            }
+            .state.running {
+                background-color: #ff8c00; /* Dark mode highlight color */
+                box-shadow: inset 3px 3px 6px #cc7a00, inset -3px -3px 6px #ffa500; /* Highlighted inset shadow dark mode */
+            }
             footer {
                 background-color: rgba(255, 255, 255, 0.08); /* Dark mode footer background */
             }
@@ -142,13 +151,19 @@
                     data.forEach(job => {
                         const row = document.createElement('tr');
 
-                        if (job.State === 'r') {
-                            row.classList.add('running');
-                        }
-
-                        Object.values(job).forEach(value => {
+                        Object.keys(job).forEach(key => {
                             const cell = document.createElement('td');
-                            cell.textContent = value;
+                            if (key === 'State') {
+                                const stateSpan = document.createElement('span');
+                                stateSpan.classList.add('state');
+                                stateSpan.textContent = job[key];
+                                if (job[key] === 'r') {
+                                    stateSpan.classList.add('running');
+                                }
+                                cell.appendChild(stateSpan);
+                            } else {
+                                cell.textContent = job[key];
+                            }
                             row.appendChild(cell);
                         });
 
