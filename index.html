@@ -144,6 +144,7 @@
                     data.forEach(job => {
                         const row = document.createElement('tr');
 
+                        // Check the state and apply the 'running' class if state is 'r'
                         if (job.State === 'r') {
                             row.classList.add('running');
                         }
