@@ -6,9 +6,8 @@
     <title>Job List</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="https://m3.material.io/styles/typography/tokens.css">
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-        
         body {
             font-family: 'Roboto', 'Helvetica Neue', sans-serif;
             background-color: #fff; /* Light mode background */
@@ -18,7 +17,7 @@
             flex-direction: column;
             min-height: 100vh;
         }
-
+        
         @media (prefers-color-scheme: dark) {
             body {
                 background-color: #212121; /* Dark mode background */
@@ -31,52 +30,52 @@
                 background-color: rgba(255, 255, 255, 0.04); /* Dark mode cell background */
             }
         }
-
+        
         .m3-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 16px;
             flex: 1;
         }
-
+        
         h1 {
             font-size: 2rem;
             margin-bottom: 16px;
         }
-
+        
         .table-container {
             overflow-x: auto;
         }
-
+        
         table {
             width: 100%;
             border-collapse: collapse;
             border-radius: 12px; /* Rounded corners */
             overflow: hidden;
         }
-
+        
         th, td {
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid rgba(0, 0, 0, 0.12); /* Material Design border */
         }
-
+        
         th {
             background-color: rgba(0, 0, 0, 0.04); /* Material Design header background */
             font-weight: 500;
         }
-
+        
         tr:hover {
             background-color: rgba(0, 0, 0, 0.08); /* Row hover effect */
         }
-
+        
         tr.running {
             background-color: rgba(255, 165, 0, 0.2); /* Light mode running job background */
         }
-
+        
         @media (prefers-color-scheme: dark) {
             tr.running {
-                background-color: rgba(255, 165, 0, 0.1); /* Dark mode running job background */
+                background-color: rgba(255, 69, 0, 0.4); /* Dark mode running job background */
             }
         }
         
@@ -91,14 +90,14 @@
             margin-bottom: 16px;
             font-size: 1rem;
         }
-
+        
         footer {
             background-color: rgba(0, 0, 0, 0.04);
             text-align: center;
             padding: 16px;
             font-size: 0.875rem;
         }
-
+        
         @media (prefers-color-scheme: dark) {
             footer {
                 background-color: rgba(255, 255, 255, 0.08); /* Dark mode footer background */
@@ -140,38 +139,38 @@
                 .then(data => {
                     const tableBody = document.querySelector('#jobTable tbody');
                     tableBody.innerHTML = ''; // Clear existing rows
-
+    
                     data.forEach(job => {
                         const row = document.createElement('tr');
-
+    
                         if (job.State === 'r') {
                             row.classList.add('running');
                         }
-
+    
                         Object.values(job).forEach(value => {
                             const cell = document.createElement('td');
                             cell.textContent = value;
                             row.appendChild(cell);
                         });
-
+    
                         tableBody.appendChild(row);
                     });
-
+    
                     // Update job count
                     document.getElementById('info').textContent = `現在のリスト: ${data.length} 件`;
-
+    
                     // Update the last fetch time
                     const lastFetchTime = new Date().toLocaleTimeString();
                     document.getElementById('info').textContent += ` | 最終更新: ${lastFetchTime}`;
                 })
                 .catch(error => console.error('Error fetching job list:', error));
         }
-
+    
         // Initial fetch
         fetchJobList();
-
+    
         // Fetch the job list every 5 minutes
         setInterval(fetchJobList, 5 * 60 * 1000);
-    </script>
+    </script>    
 </body>
 </html>
