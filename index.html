@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://m3.material.io/styles/typography/tokens.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-        
+
         body {
             font-family: 'Roboto', 'Helvetica Neue', sans-serif;
             background-color: #fff; /* Light mode background */
@@ -42,6 +42,9 @@
         h1 {
             font-size: 2rem;
             margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .table-container {
@@ -104,11 +107,40 @@
                 background-color: rgba(255, 255, 255, 0.08); /* Dark mode footer background */
             }
         }
+
+        .update-button {
+            padding: 8px 16px;
+            font-size: 1rem;
+            color: #000;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .update-button {
+                color: #fff;
+                background-color: #212121;
+                border-color: #fff;
+            }
+        }
+
+        .update-button:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .update-button:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+        }
     </style>
 </head>
 <body>
     <div class="m3-container">
-        <h1>Job List</h1>
+        <h1>Job List <button class="update-button" onclick="fetchJobList()">更新</button></h1>
         <div id="info"></div>
         <div class="table-container">
             <table id="jobTable">
