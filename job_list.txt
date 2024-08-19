@@ -1,38 +1,20 @@
 [
     {
-        "submit/start at": "09:42:24",
-        "job_id": "32927",
-        "name": "G-TT_t0d_6",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "08/19 09:50",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "submit/start at": "09:42:31",
-        "job_id": "32928",
-        "name": "G-TT_t0d_6",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "08/19 09:50",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "submit/start at": "09:13:40",
+        "submit/start at": "09:55:26",
         "job_id": "32929",
         "name": "G-TT_t0d_7",
         "user": "MyLab",
-        "state": "qw",
-        "Check Time": "08/19 09:50",
-        "queue": "12"
+        "state": "r",
+        "Check Time": "08/19 09:55",
+        "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
-        "submit/start at": "09:13:40",
+        "submit/start at": "09:55:38",
         "job_id": "32930",
         "name": "G-TT_t0d_7",
         "user": "MyLab",
-        "state": "qw",
-        "Check Time": "08/19 09:50",
-        "queue": "12"
+        "state": "r",
+        "Check Time": "08/19 09:55",
+        "queue": "all.q@chem-calc01.c.h.nc-toyam"
     }
 ]
