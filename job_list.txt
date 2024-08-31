@@ -1,11 +1,11 @@
 [
     {
-        "submit/start at": "17:50:07",
-        "job_id": "35333",
-        "name": "tcal.sh",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "08/31 19:12",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
+        "submit/start at": "none",
+        "job_id": "none",
+        "name": "none",
+        "user": "none",
+        "state": "none",
+        "Check Time": "08/31 19:17",
+        "queue": "none"
     }
 ]
