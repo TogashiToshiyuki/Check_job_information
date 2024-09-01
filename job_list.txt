@@ -5,16 +5,7 @@
         "name": "G-TT_t0d_5",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "09/02 02:36",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "submit/start at": "02:36:26",
-        "job_id": "35914",
-        "name": "G-TT_t0d_8",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "09/02 02:36",
+        "Check Time": "09/02 02:41",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     }
 ]
