@@ -5,7 +5,7 @@
         "name": "G-TT_+1_EG",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "10/17 11:21",
+        "Check Time": "10/17 11:26",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     }
 ]
