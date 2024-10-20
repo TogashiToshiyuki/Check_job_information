@@ -5,7 +5,7 @@
         "name": "G-TT_t0d_8",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "10/20 22:41",
+        "Check Time": "10/20 22:46",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
@@ -14,7 +14,7 @@
         "name": "G-TT_t0d_9",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "10/20 22:41",
+        "Check Time": "10/20 22:46",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
@@ -23,7 +23,7 @@
         "name": "G-TT_t0d_9",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "10/20 22:41",
+        "Check Time": "10/20 22:46",
         "queue": "12"
     },
     {
@@ -32,7 +32,7 @@
         "name": "G-TT_t0d_9",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "10/20 22:41",
+        "Check Time": "10/20 22:46",
         "queue": "12"
     },
     {
@@ -41,7 +41,7 @@
         "name": "G-TT_t0d_9",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "10/20 22:41",
+        "Check Time": "10/20 22:46",
         "queue": "12"
     },
     {
@@ -50,169 +50,7 @@
         "name": "G-TT_t0d_9",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:31",
-        "job_id": "40314",
-        "name": "G-TT_t0d_1",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:31",
-        "job_id": "40315",
-        "name": "G-TT_t0d_1",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:31",
-        "job_id": "40316",
-        "name": "G-TT_t0d_2",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:31",
-        "job_id": "40317",
-        "name": "G-TT_t0d_2",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:31",
-        "job_id": "40318",
-        "name": "G-TT_t0d_3",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:31",
-        "job_id": "40319",
-        "name": "G-TT_t0d_3",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:32",
-        "job_id": "40320",
-        "name": "G-TT_t0d_4",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:32",
-        "job_id": "40321",
-        "name": "G-TT_t0d_4",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:32",
-        "job_id": "40322",
-        "name": "G-TT_t0d_5",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:32",
-        "job_id": "40323",
-        "name": "G-TT_t0d_5",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:32",
-        "job_id": "40324",
-        "name": "G-TT_t0d_6",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:32",
-        "job_id": "40325",
-        "name": "G-TT_t0d_6",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:33",
-        "job_id": "40326",
-        "name": "G-TT_t0d_7",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:33",
-        "job_id": "40327",
-        "name": "G-TT_t0d_7",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:33",
-        "job_id": "40328",
-        "name": "G-TT_t0d_8",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:33",
-        "job_id": "40329",
-        "name": "G-TT_t0d_8",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:33",
-        "job_id": "40330",
-        "name": "G-TT_t0d_9",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "18:09:33",
-        "job_id": "40331",
-        "name": "G-TT_t0d_9",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "10/20 22:41",
+        "Check Time": "10/20 22:46",
         "queue": "12"
     }
 ]
