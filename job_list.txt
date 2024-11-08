@@ -5,16 +5,16 @@
         "name": "G-mf_+1_EG",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "11/08 15:24",
+        "Check Time": "11/08 15:29",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
-        "submit/start at": "15:23:37",
-        "job_id": "43078",
-        "name": "G-mf_+0_SP",
+        "submit/start at": "15:28:01",
+        "job_id": "43081",
+        "name": "G-mf_+1_EG",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "11/08 15:24",
+        "Check Time": "11/08 15:29",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     }
 ]
