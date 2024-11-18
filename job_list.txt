@@ -5,25 +5,7 @@
         "name": "G-mf_+1_EG",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "11/18 16:16",
+        "Check Time": "11/18 16:21",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "submit/start at": "16:15:22",
-        "job_id": "44449",
-        "name": "G-mf_+1_SP",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "11/18 16:16",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "submit/start at": "16:16:00",
-        "job_id": "44450",
-        "name": "G-mf_+1_SP",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "11/18 16:16",
-        "queue": "12"
     }
 ]
