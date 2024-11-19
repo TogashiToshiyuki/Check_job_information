@@ -4,8 +4,8 @@
         "job_id": "44498",
         "name": "tcal.sh",
         "user": "MyLab",
-        "state": "r",
-        "Check Time": "11/20 00:11",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
+        "state": "Eqw",
+        "Check Time": "11/20 00:16",
+        "queue": "12"
     }
 ]
