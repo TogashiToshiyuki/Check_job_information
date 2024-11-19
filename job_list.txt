@@ -5,7 +5,7 @@
         "name": "tcal.sh",
         "user": "MyLab",
         "state": "Eqw",
-        "Check Time": "11/20 00:42",
+        "Check Time": "11/20 00:47",
         "queue": "12"
     }
 ]
