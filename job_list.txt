@@ -1,20 +1,11 @@
 [
     {
-        "submit/start at": "21:57:51",
-        "job_id": "45040",
-        "name": "G-TT_50_17",
+        "submit/start at": "22:16:57",
+        "job_id": "45042",
+        "name": "tcal.sh",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "11/24 22:15",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "submit/start at": "21:57:58",
-        "job_id": "45041",
-        "name": "G-TT_50_17",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "11/24 22:15",
+        "Check Time": "11/24 22:20",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     }
 ]
