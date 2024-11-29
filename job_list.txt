@@ -1,92 +1,11 @@
 [
     {
-        "submit/start at": "11:31:08",
-        "job_id": "45813",
-        "name": "G-TT_300_1",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "11/29 11:31",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "submit/start at": "11:31:10",
-        "job_id": "45814",
-        "name": "G-TT_300_1",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "11/29 11:31",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "submit/start at": "11:29:54",
-        "job_id": "45815",
-        "name": "G-TT_300_1",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "11/29 11:31",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "11:29:54",
-        "job_id": "45816",
-        "name": "G-TT_300_1",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "11/29 11:31",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "11:29:54",
-        "job_id": "45817",
-        "name": "G-TT_300_1",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "11/29 11:31",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "11:29:54",
-        "job_id": "45818",
-        "name": "G-TT_50_15",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "11/29 11:31",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "11:29:54",
-        "job_id": "45819",
-        "name": "G-TT_50_15",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "11/29 11:31",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "11:29:54",
-        "job_id": "45820",
-        "name": "G-TT_50_15",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "11/29 11:31",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "11:29:54",
-        "job_id": "45821",
-        "name": "G-TT_50_16",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "11/29 11:31",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "11:29:54",
-        "job_id": "45822",
-        "name": "G-TT_50_16",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "11/29 11:31",
-        "queue": "12"
+        "submit/start at": "none",
+        "job_id": "none",
+        "name": "none",
+        "user": "none",
+        "state": "none",
+        "Check Time": "11/29 11:35",
+        "queue": "none"
     }
 ]
