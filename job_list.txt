@@ -5,7 +5,7 @@
         "name": "G-TT_50_14",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "11/29 22:29",
+        "Check Time": "11/29 22:30",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
@@ -14,7 +14,7 @@
         "name": "G-TT_50_14",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "11/29 22:29",
+        "Check Time": "11/29 22:30",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
@@ -23,7 +23,7 @@
         "name": "G-TT_50_14",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "11/29 22:29",
+        "Check Time": "11/29 22:30",
         "queue": "12"
     }
 ]
