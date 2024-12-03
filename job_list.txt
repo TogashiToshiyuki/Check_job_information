@@ -5,7 +5,7 @@
         "name": "G-YT_250_1",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "12/04 06:23",
+        "Check Time": "12/04 06:25",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
@@ -14,7 +14,7 @@
         "name": "G-YT_50_12",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "12/04 06:23",
+        "Check Time": "12/04 06:25",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     }
 ]
