@@ -5,16 +5,7 @@
         "name": "G-Reorg-TT",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "12/03 17:36",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "submit/start at": "17:22:02",
-        "job_id": "46487",
-        "name": "G-YT_100_1",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "12/03 17:36",
+        "Check Time": "12/03 17:39",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     }
 ]
