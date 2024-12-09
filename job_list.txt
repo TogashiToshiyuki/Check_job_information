@@ -1,48 +1,21 @@
 [
     {
-        "submit/start at": "07:18:01",
-        "job_id": "47570",
-        "name": "G-TT_t0d_4",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "12/10 08:40",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
         "submit/start at": "07:32:36",
         "job_id": "47571",
         "name": "G-TT_t0d_4",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "12/10 08:40",
+        "Check Time": "12/10 08:45",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
-        "submit/start at": "00:26:21",
-        "job_id": "47572",
-        "name": "G-TT_t0d_4",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "12/10 08:40",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "00:26:21",
-        "job_id": "47573",
-        "name": "G-TT_t0d_4",
-        "user": "MyLab",
-        "state": "qw",
-        "Check Time": "12/10 08:40",
-        "queue": "12"
-    },
-    {
-        "submit/start at": "00:26:21",
+        "submit/start at": "08:44:08",
         "job_id": "47574",
         "name": "G-TT_t0d_4",
         "user": "MyLab",
-        "state": "qw",
-        "Check Time": "12/10 08:40",
-        "queue": "12"
+        "state": "r",
+        "Check Time": "12/10 08:45",
+        "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
         "submit/start at": "00:26:21",
@@ -50,7 +23,7 @@
         "name": "G-TT_t0d_4",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "12/10 08:40",
+        "Check Time": "12/10 08:45",
         "queue": "12"
     },
     {
@@ -59,7 +32,7 @@
         "name": "G-TT_t0d_4",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "12/10 08:40",
+        "Check Time": "12/10 08:45",
         "queue": "12"
     },
     {
@@ -68,7 +41,7 @@
         "name": "G-TT_t0d_4",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "12/10 08:40",
+        "Check Time": "12/10 08:45",
         "queue": "12"
     }
 ]
