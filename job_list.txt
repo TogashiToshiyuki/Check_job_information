@@ -5,7 +5,7 @@
         "name": "tcal.sh",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "01/10 03:40",
+        "Check Time": "01/10 03:45",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
@@ -14,7 +14,7 @@
         "name": "G-TT_t0d_4",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "01/10 03:40",
+        "Check Time": "01/10 03:45",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
@@ -23,7 +23,7 @@
         "name": "G-TT_t0d_3",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "01/10 03:40",
+        "Check Time": "01/10 03:45",
         "queue": "12"
     }
 ]
