@@ -5,7 +5,7 @@
         "name": "tcal.sh",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "01/10 16:23",
+        "Check Time": "01/10 16:28",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     }
 ]
