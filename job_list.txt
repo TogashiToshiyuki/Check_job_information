@@ -5,25 +5,16 @@
         "name": "G-Reorg-TT",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "02/16 21:14",
+        "Check Time": "02/16 21:19",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
-        "submit/start at": "21:04:23",
-        "job_id": "51986",
-        "name": "G-Reorg-TT",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "02/16 21:14",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
-        "submit/start at": "18:52:24",
+        "submit/start at": "21:15:47",
         "job_id": "51987",
         "name": "G-Reorg-TT",
         "user": "MyLab",
-        "state": "qw",
-        "Check Time": "02/16 21:14",
-        "queue": "12"
+        "state": "r",
+        "Check Time": "02/16 21:19",
+        "queue": "all.q@chem-calc01.c.h.nc-toyam"
     }
 ]
