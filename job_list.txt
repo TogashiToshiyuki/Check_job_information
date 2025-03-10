@@ -1,20 +1,11 @@
 [
     {
-        "submit/start at": "23:49:33",
-        "job_id": "53709",
-        "name": "G-YT_50_10",
-        "user": "MyLab",
-        "state": "r",
-        "Check Time": "03/11 00:02",
-        "queue": "all.q@chem-calc01.c.h.nc-toyam"
-    },
-    {
         "submit/start at": "00:01:55",
         "job_id": "53710",
         "name": "G-YT_50_98",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "03/11 00:02",
+        "Check Time": "03/11 00:07",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     }
 ]
