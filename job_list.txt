@@ -5,7 +5,7 @@
         "name": "G-YT_50_78",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "03/14 09:19",
+        "Check Time": "03/14 09:24",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
@@ -14,7 +14,7 @@
         "name": "G-YT_50_80",
         "user": "MyLab",
         "state": "r",
-        "Check Time": "03/14 09:19",
+        "Check Time": "03/14 09:24",
         "queue": "all.q@chem-calc01.c.h.nc-toyam"
     },
     {
@@ -23,7 +23,7 @@
         "name": "G-YT_50_82",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "03/14 09:19",
+        "Check Time": "03/14 09:24",
         "queue": "12"
     },
     {
@@ -32,7 +32,7 @@
         "name": "G-YT_50_84",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "03/14 09:19",
+        "Check Time": "03/14 09:24",
         "queue": "12"
     },
     {
@@ -41,7 +41,7 @@
         "name": "G-YT_50_86",
         "user": "MyLab",
         "state": "qw",
-        "Check Time": "03/14 09:19",
+        "Check Time": "03/14 09:24",
         "queue": "12"
     }
 ]
